@@ -1,4 +1,4 @@
-var locations = []; // this array will hold your objects
+var locations = []; 
 
 function State(state, revenue, locationCount) {
   this.state = state;
@@ -20,13 +20,6 @@ locations.push(nevada);
 
 console.log(locations);
 
-// object constructor
-
-// object instances
-
-// push object instances to locations array
-
-// DO NOT MODIFY THIS CODE
 $(document).ready(function () {
   locations.forEach(function (element, index) {
     var $li = $('<li></li>');
