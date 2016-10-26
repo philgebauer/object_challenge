@@ -1,5 +1,25 @@
 var locations = []; // this array will hold your objects
 
+function State(state, revenue, locationCount) {
+  this.state = state;
+  this.revenue = revenue;
+  this.locationCount = locationCount;
+  this.averageRevenue = function() {
+    return this.locationCount / this.revenue;
+  }
+}
+
+var illinois = new State ("IL", 5000, 12);
+var minnesota = new State ("MN", 300, 3);
+var nevada = new State ("NV", 25000, 1);
+
+locations.push(illinois);
+locations.push(minnesota);
+locations.push(nevada);
+
+
+console.log(locations);
+
 // object constructor
 
 // object instances
